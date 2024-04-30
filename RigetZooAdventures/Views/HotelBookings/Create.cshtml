@@ -1,0 +1,119 @@
+﻿@model RigetZooAdventures.Models.HotelBooking
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="text-align: center;">Book a Stay</h1>
+
+<br />
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Start Date - minimum of current date *@
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" id="startDate" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+
+            @* End Date - minimum of current date *@
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label"></label>
+                <input asp-for="EndDate" class="form-control" id="endDate" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+
+            @* Total Days *@
+            <div class="form-group">
+                <p>Total Days: <span id="stayLength"></span></p>
+            </div>
+
+            @* Username - hidden *@
+            <div class="form-group">
+                <input asp-for="Username" class="form-control" value="@User.Identity.Name" type="hidden" />
+            </div>
+
+            @* Adults *@
+            <div class="form-group">
+                <label asp-for="Adults" class="control-label"></label>
+                <input asp-for="Adults" class="form-control" />
+                <span asp-validation-for="Adults" class="text-danger"></span>
+            </div>
+
+            @* Children *@
+            <div class="form-group">
+                <label asp-for="Children" class="control-label"></label>
+                <input asp-for="Children" class="form-control" />
+                <span asp-validation-for="Children" class="text-danger"></span>
+            </div>
+
+            @* Room Type *@
+            <div class="form-group">
+                <label asp-for="RoomType" class="control-label"></label>
+                <select class="form-select" asp-for="RoomType" id="roomType">
+                    <option selected>Select room type</option>
+                    <option value="Large Family Room">Large Family Room</option>
+                    <option value="Large Double Room">Large Double Room</option>
+                    <option value="Family Room">Family Room</option>
+                    <option value="Double Room">Double Room</option>
+                </select>
+                <span asp-validation-for="RoomType" class="text-danger"></span>
+            </div>
+
+            @* Amount of Rooms *@
+            <div class="form-group">
+                <label asp-for="RoomAmount" class="control-label"></label>
+                <input asp-for="RoomAmount" class="form-control" id="roomAmount"/>
+                <span asp-validation-for="RoomAmount" class="text-danger"></span>
+            </div>
+
+            @* Date Booked - hidden *@
+            <div class="form-group">
+                <input asp-for="DateBooked" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" type="hidden"/>
+            </div>
+
+            <br />
+
+            @* Submit *@
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<script>
+    // checks for changes
+    document.getElementById("startDate").oninput = function () { StayLength() }
+    document.getElementById("endDate").oninput = function () { StayLength() }
+
+    function StayLength() {
+        // gets start and end dates from inputs
+        var startDateInput = document.getElementById("startDate");
+        var endDateInput = document.getElementById("endDate");
+
+        // creates dates from the inputs
+        var startDate = new Date(startDateInput.valueAsNumber);
+        var endDate = new Date(endDateInput.valueAsNumber);
+
+        // checks if both values have been input
+        if (!isNaN(startDate) && !isNaN(endDate)) {
+            // finds the range in milliseconds
+            var timeRange = Math.abs(endDate - startDate);
+            var dateRange = Math.ceil(timeRange / (1000 * 60 * 60 * 24)); // and then turns it into days
+
+            // returns dateRange
+            document.getElementById("stayLength").innerHTML = dateRange;
+        }
+        else {
+            document.getElementById("stayLength").innerHTML = 0;
+        }
+    }
+</script>
+

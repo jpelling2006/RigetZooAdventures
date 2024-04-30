@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Hotel Rooms";
+}
+
+
+@* Room Sections *@
+<div class="row">
+    <h2 style="text-align: center;">Rooms</h2>
+</div>
+<br />
+
+@* Room 1 (Large Family Room) *@
+<div class="row">
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/hotel/rooms/largeFamilyRoom.jpg" alt="Two small double beds with white sheets, red pillows, and grey headboards. There is a view of some palm trees outside." />
+    </div>
+    <br />
+    <div class="col-lg-8">
+        <h3>
+            Large Family Room
+            <small class="text-body-secondary">| £150/night</small>
+        </h3>
+        <p>
+            Nulla lacinia tortor a sollicitudin venenatis. Donec feugiat euismod tortor, at venenatis diam volutpat a. Cras vitae hendrerit lorem. Sed semper velit a congue tempus. Fusce vel posuere nisi. Vestibulum quam sapien, lobortis id massa quis, posuere aliquam felis. Proin luctus finibus quam in hendrerit. Integer sit amet imperdiet metus. Morbi ac fringilla dui, at dapibus tellus. In gravida dolor ut nisi dapibus facilisis vitae sit amet ligula.
+        </p>
+
+        @* Bed / Accessibility Information *@
+        <p>
+            @* Singles *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z" /></svg> 3 singles |
+            @* Doubles *@
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" /></svg> 3 doubles incl. Sofa Bed |
+
+            @* Accessibility *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-wheelchair" viewBox="0 0 16 16"><path d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z" /></svg> Accessible
+        </p>
+    </div>
+</div>
+
+<br />
+
+@* Room 2 (Large Double Room) *@
+<div class="row">
+    <div class="col-lg-8">
+        <h3>
+            Large Double Room
+            <small class="text-body-secondary">| £125/night</small>
+        </h3>
+        <p>
+            Mauris elementum scelerisque risus ut pretium. Donec eget nunc ac augue finibus accumsan. In pharetra eleifend sem, sed facilisis ante sodales ac. Nam ornare placerat orci non ultricies. Nulla sit amet ante ac lorem efficitur placerat. Aenean turpis metus, porttitor ac enim id, tristique euismod diam. Vestibulum non velit a orci scelerisque elementum ac vel dolor. Nam pulvinar luctus diam in tristique. Aliquam nec auctor elit, non placerat arcu.
+        </p>
+
+        @* Bed / Accessibility Information *@
+        <p>
+            @* Doubles *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" /></svg> 1 double |
+
+            @* Accessibility *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-wheelchair" viewBox="0 0 16 16"><path d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z" /></svg> Accessible
+        </p>
+    </div>
+    <br />
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/hotel/rooms/largeDoubleRoom.jpg" alt="A large double bed with a swan made out of a brown towel on top of it, with three windowed doors beside it." />
+    </div>
+</div>
+
+<br />
+
+@* Room 3 (Family Room) *@
+<div class="row">
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/hotel/rooms/familyRoom.jpg" alt="A room with two single beds close to eachother, with dark wood panelling on the wall and ceiling." />
+    </div>
+    <br />
+    <div class="col-lg-8">
+        <h3>
+            Family Room
+            <small class="text-body-secondary">| £100/night</small>
+        </h3>
+        <p>
+            Cras blandit bibendum nulla et aliquam. Vestibulum posuere, erat et vestibulum suscipit, nunc nisi pulvinar sapien, sed mattis dolor elit et neque. Donec et ipsum iaculis, pretium diam vel, auctor lectus. Donec placerat, nulla in sodales ultricies, massa lacus varius lacus, consectetur finibus tortor lectus non orci. In maximus lacus at pellentesque iaculis. Nulla sagittis lectus justo, vitae luctus metus dignissim ac.
+        </p>
+
+        @* Bed / Accessibility Information *@
+        <p>
+            @* Singles *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z" /></svg> 2 singles |
+
+            @* Doubles *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" /></svg> 2 doubles incl. Sofa Bed |
+
+            @* Accessibility *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-wheelchair" viewBox="0 0 16 16"><path d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z" /></svg> Accessible
+        </p>
+    </div>
+</div>
+
+<br />
+
+@* Room 4 (Double Room) *@
+<div class="row">
+    <div class="col-lg-8">
+        <h3>
+            Double Room
+            <small class="text-body-secondary">| £75/night</small>
+        </h3>
+        <p>
+            Duis hendrerit mollis nunc ac imperdiet. Aliquam placerat purus libero, nec fermentum sapien ullamcorper ut. In ante massa, malesuada nec feugiat id, aliquam non ante. Mauris et elit in mauris eleifend tincidunt in ut magna. Etiam fermentum lobortis tortor nec bibendum. Sed iaculis orci lacus, et volutpat neque commodo eget. Fusce nec porttitor risus. Proin vulputate facilisis elit vitae ultrices. Fusce nec aliquet leo. Proin nec bibendum orci.
+        </p>
+
+        @* Bed / Accessibility Information *@
+        <p>
+
+            @* Doubles *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" /></svg> 1 double |
+
+            @* Accessibility *@
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-wheelchair" viewBox="0 0 16 16"><path d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.73 4.73 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.73 4.73 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79zM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65z" /></svg> Accessible
+        </p>
+    </div>
+    <br />
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/hotel/rooms/doubleRoom.jpg" alt="A double bed in a dimly lit room featuring dark wood panelling." />
+    </div>
+</div>
+
+@* Button to Book Hotel Room *@
+<div class="row">
+    <a><button class="btn btn-primary btn-lg" style="width: auto; margin: auto; display: block;">Book a Stay</button></a>
+</div>

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<RigetZooAdventures.Models.Article>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align: center;">News</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ArticleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastEdited)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArticleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageURL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastEdited)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ArticleId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ArticleId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ArticleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="@item.ImageURL" style="width: auto;"/>
+        </div>
+        <div class="col-sm-9">
+            <h2>@Html.DisplayFor(modelItem => item.ArticleName)</h2>
+            <br />
+            <p>@Html.DisplayFor(modelItem => item.Content)</p>
+            <br />
+
+        </div>
+    </div>
+}

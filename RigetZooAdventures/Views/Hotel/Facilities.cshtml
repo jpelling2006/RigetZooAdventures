@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Hotel Facilities";
+}
+
+@* Hero Image Carousel *@
+<div class="row">
+    <div id="carouselHotelFacilities" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        @* Carousel Indicators *@
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselHotelFacilities" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselHotelFacilities" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselHotelFacilities" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+            @* Slide 1 *@
+            <div class="carousel-item active">
+                <img src="~/assets/hotel/facilities/carousel/carouselHotelBalconies.jpg" class="d-block w-100" alt="A corner of an open courtyard with a view of various balconies, with a couple of palm trees positioned in front." style="aspect-ratio: 16/9 auto;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cras porttitor rutrum gravida.</h5>
+                    <p>Phasellus vitae sem neque. Sed in volutpat velit, eget dapibus nibh.</p>
+                </div>
+            </div>
+
+            @* Slide 2 *@
+            <div class="carousel-item">
+                <img src="~/assets/hotel/facilities/carousel/carouselHotelPool1.jpg" class="d-block w-100" alt="A smaller-sized pool with various longue chairs surrounding it and some more palm trees dotted around it." style="aspect-ratio: 16/9 auto;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Donec a ipsum sed tellus consectetur laoreet at eget lectus.</h5>
+                    <p>Aenean non cursus orci. Nam tincidunt justo in fermentum egestas.</p>
+                </div>
+            </div>
+
+            @* Slide 3 *@
+            <div class="carousel-item">
+                <img src="~/assets/hotel/facilities/carousel/carouselHotelPool2.jpg" class="d-block w-100" alt="A view of the edge of a pool during sunset, surrounded by longue chairs, parasols, and palm trees." style="aspect-ratio: 16/9 auto;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sed pulvinar vulputate condimentum.</h5>
+                    <p>Quisque egestas luctus turpis, eu finibus diam fermentum vel. Vivamus fermentum efficitur accumsan.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotelFacilities" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHotelFacilities" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<br />
+<br />
+
+@* Facility Sections *@
+<div class="row">
+    <h2 style="text-align: center;">Hotel Facilities</h2>
+</div>
+<br />
+
+@* Facility 1 (Pool) *@
+<div class="row">
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/hotel/facilities/pool.jpg" alt="A woman relaxing on her back alone in a large pool."/>
+    </div>
+    <br />
+    <div class="col-lg-8">
+        <h3>Pool</h3>
+        <p>
+            Phasellus consectetur eros quis faucibus tempus. Duis ligula turpis, ornare sed justo nec, accumsan rhoncus nulla. Praesent aliquet tincidunt dolor, in tempor leo lacinia in. Maecenas eget scelerisque enim. Nam suscipit nisi vel odio sollicitudin rutrum. Aenean laoreet ex nec risus laoreet, id volutpat velit pharetra. Vivamus consectetur convallis tempus. Maecenas aliquam pharetra mauris ac sodales. Donec ornare urna interdum elit finibus volutpat eget ut tortor.
+        </p>
+    </div>
+</div>
+
+<br />
+
+@* Facility 2 (All Inclusive Buffet)*@
+<div class="row">
+    <div class="col-lg-8">
+        <h3>All Inclusive Buffet</h3>
+        <p>
+            In a quam eu lacus sodales bibendum. Nulla dignissim, massa vel sodales aliquet, metus urna euismod risus, at facilisis neque mi in enim. Nunc aliquam lacus sed placerat dapibus. Quisque et dignissim purus. Aenean id velit eget arcu dignissim efficitur eget vitae ante. Donec aliquet enim non ullamcorper feugiat. Quisque sed tincidunt ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+    </div>
+    <br />
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/hotel/facilities/buffet.jpg" alt="A few dishes at a buffet with black signs in front of them." />
+    </div>
+</div>
+
+<br />
+
+@* Facility 3 (Private Park) *@
+<div class="row">
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/hotel/facilities/privatePark.jpg" alt="A large park with lots of trees and a dirt footpath." />
+    </div>
+    <br />
+    <div class="col-lg-8">
+        <h3>Private Park</h3>
+        <p>
+            Sed consectetur, justo id fringilla blandit, arcu quam dignissim leo, vitae mattis augue est nec dolor. Donec nunc risus, suscipit eu odio sit amet, porttitor porta enim. Suspendisse ac augue eget purus interdum semper. Etiam aliquam egestas sapien et molestie. Etiam finibus nunc sit amet lectus laoreet, porttitor blandit tortor convallis. Maecenas consectetur bibendum bibendum. Pellentesque sit amet cursus urna. Ut consequat nunc et luctus ornare.
+        </p>
+    </div>
+</div>
+
+@* Button to Book Hotel Room *@
+<div class="row">
+    <a><button class="btn btn-primary btn-lg" style="width: auto; margin: auto; display: block;">Book a Stay</button></a>
+</div>

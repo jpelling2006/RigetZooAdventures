@@ -1,0 +1,108 @@
+﻿@model IEnumerable<RigetZooAdventures.Models.HotelBooking>
+
+@{
+    ViewData["Title"] = "Your Hotel Bookings";
+}
+
+<h1>Your Hotel Bookings</h1>
+
+<p>
+    <a asp-action="Create">Book a Stay</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adults)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Children)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomAmount)
+            </th>
+            <th>
+                Total Price
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateBooked)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            @* calculates room price per night - will be done automatically via database in future *@
+            int roomPrice = 0;
+            @if (item.RoomType == "Large Family Room")
+            {
+                roomPrice = 150;
+            }
+            else if (item.RoomType == "Large Double Room")
+            {
+                roomPrice = 125;
+            }
+            else if (item.RoomType == "Family Room")
+            {
+                roomPrice = 100;
+            }
+            else if (item.RoomType == "Double Room")
+            {
+                roomPrice = 75;
+            }
+    @if (item.Username == User.Identity.Name)
+            {
+                @* calculates stay length *@
+                int stayLength = (item.EndDate - item.StartDate).Days;
+
+                @* calculates total price of stay *@
+                int totalPrice = roomPrice * item.RoomAmount * stayLength;
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EndDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Username)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Adults)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Children)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoomType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoomAmount)
+                    </td>
+                    <td>
+                        £@(totalPrice).00
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateBooked)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.HotelBookingID">Details</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

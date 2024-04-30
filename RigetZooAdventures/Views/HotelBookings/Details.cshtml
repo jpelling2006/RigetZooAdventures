@@ -1,0 +1,96 @@
+﻿@model RigetZooAdventures.Models.HotelBooking
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+@if (Model.Username == User.Identity.Name)
+{
+    @* calculates room price per night - will be done automatically via database in future *@
+    int roomPrice = 0;
+    @if (Model.RoomType == "Large Family Room") {
+        roomPrice = 150;
+    }
+    else if (Model.RoomType == "Large Double Room") {
+        roomPrice = 125;
+    }
+    else if (Model.RoomType == "Family Room")
+    {
+        roomPrice = 100;
+    }
+    else if (Model.RoomType == "Double Room")
+    {
+        roomPrice = 75;
+    }
+
+    @* calculates stay length *@
+    int stayLength = (Model.EndDate - Model.StartDate).Days;
+
+    @* calculates total price of stay *@
+    int totalPrice = roomPrice * Model.RoomAmount * stayLength;
+
+    <h1>Details</h1>
+
+    <div>
+        <h4>HotelBooking</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.StartDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StartDate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EndDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EndDate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Adults)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Adults)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Children)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Children)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.RoomType)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.RoomType)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.RoomAmount)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.RoomAmount)
+            </dd>
+            <dt class="col-sm-2">
+                Total Price
+            </dt>
+            <dd class="col-sm-10">
+                £@(totalPrice).00
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DateBooked)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateBooked)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+}
+else
+{
+    <p><b>You aren't allowed access to this page. Ensure you're logged in with the correct account.</b></p>
+}

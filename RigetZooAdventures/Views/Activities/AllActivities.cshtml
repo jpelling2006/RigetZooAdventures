@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "All Activities";
+}
+
+@* Hero Image Carousel *@
+<div class="row">
+    <div id="carouselAllActivities" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        @* Carousel Indicators *@
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselAllActivities" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselAllActivities" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselAllActivities" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+            @* Slide 1 *@
+            <div class="carousel-item active">
+                <img src="~/assets/activities/allActivities/carousel/safari.jpg" class="d-block w-100" alt="People inside a gray safari truck with a sunset in the background.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Quisque accumsan augue tincidunt nibh tristique auctor.</h5>
+                    <p>Donec laoreet libero non massa convallis, vitae pellentesque lorem gravida. Aliquam at eros elit.</p>
+                </div>
+            </div>
+
+            @* Slide 2 *@
+            <div class="carousel-item">
+                <img src="~/assets/activities/allActivities/carousel/bridge.jpg" class="d-block w-100" alt="Two people close to eachother whilst going across a rope bridge.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Etiam elementum augue sit amet enim suscipit convallis.</h5>
+                    <p>Vivamus in lobortis nibh, quis venenatis ex. Duis eget condimentum augue, eu venenatis magna.</p>
+                </div>
+            </div>
+
+            @* Slide 3 *@
+            <div class="carousel-item">
+                <img src="~/assets/activities/allActivities/carousel/feeding.jpg" class="d-block w-100" alt="A person feeding a camel some lettuce.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Morbi ut ultrices orci.</h5>
+                    <p>Vivamus faucibus non quam id pharetra. Donec non tellus id tellus mattis sagittis.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAllActivities" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAllActivities" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<br /><br />
+
+@* Activity Sections *@
+<div class="row">
+    <h2 style="text-align: center;">All Activities</h2>
+</div>
+<br />
+
+@* Activity 1 (Safari) *@
+<div class="row">
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/activities/allActivities/safari.jpg" />
+    </div>
+    <br />
+    <div class="col-lg-8">
+        <h3>Safari</h3>
+        <p>
+            Morbi at cursus mauris, et pretium elit. Phasellus efficitur dolor magna. Ut pulvinar, mauris vel scelerisque tristique, diam justo rhoncus nulla, at vehicula augue tortor in neque. Morbi viverra, lectus at vehicula mollis, nunc risus dictum lectus, nec commodo elit augue sed eros. Ut egestas lectus ut pharetra tempor. Vestibulum lobortis viverra facilisis. Aliquam vehicula sagittis risus sit amet semper. Aenean leo justo, euismod quis magna nec, tristique ullamcorper velit. Donec sit amet sapien eu orci ultricies auctor.
+        </p>
+        <a asp-area="" asp-controller="Activities" asp-action="Safari"><button type="button" class="btn btn-primary">Learn More</button></a>
+    </div>
+</div>
+
+<br />
+
+@* Activity 2 (Bridge)*@
+<div class="row">
+    <div class="col-lg-8">
+        <h3>The Bridge</h3>
+        <p>
+            Morbi at cursus mauris, et pretium elit. Phasellus efficitur dolor magna. Ut pulvinar, mauris vel scelerisque tristique, diam justo rhoncus nulla, at vehicula augue tortor in neque. Morbi viverra, lectus at vehicula mollis, nunc risus dictum lectus, nec commodo elit augue sed eros. Ut egestas lectus ut pharetra tempor. Vestibulum lobortis viverra facilisis. Aliquam vehicula sagittis risus sit amet semper. Aenean leo justo, euismod quis magna nec, tristique ullamcorper velit. Donec sit amet sapien eu orci ultricies auctor.
+        </p>
+        <a asp-area="" asp-controller="Activities" asp-action="Bridge"><button type="button" class="btn btn-primary">Learn More</button></a>
+    </div>
+    <br />
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/activities/allActivities/bridge.jpg" />
+    </div>
+</div>
+
+<br />
+
+@* Activity 3 (Feeding) *@
+<div class="row">
+    <div class="col-lg-4">
+        <img class="rounded-image" src="~/assets/activities/allActivities/feeding.jpg" />
+    </div>
+    <br />
+    <div class="col-lg-8">
+        <h3>Feeding</h3>
+        <p>
+            Donec fermentum, ipsum at vestibulum rutrum, tellus mauris bibendum elit, eu ultricies ex ante quis lectus. Cras at commodo dui. In risus nibh, pharetra a ex id, laoreet pharetra felis. Nam dignissim fermentum nisl, a dignissim tortor ornare sit amet. Pellentesque consectetur arcu odio, non scelerisque mauris mattis sit amet. Donec placerat dolor vitae commodo luctus. Nullam mi leo, auctor id nibh sit amet, sollicitudin cursus lorem. Aliquam congue pellentesque est, sed elementum diam tincidunt ut. Vivamus non ligula odio.
+        </p>
+        <a asp-area="" asp-controller="Activities" asp-action="Feeding"><button type="button" class="btn btn-primary">Learn More</button></a>
+    </div>
+</div>

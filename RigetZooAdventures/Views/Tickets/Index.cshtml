@@ -1,0 +1,75 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<RigetZooAdventures.Models.Tickets>
+
+@{
+    ViewData["Title"] = "Your Tickets";
+}
+
+<h1 style="text-align: center;">Your Tickets</h1>
+
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adults)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Children)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsEducation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SchoolName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValidDate)
+            </th>
+            <th>
+                Total Price
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            @if (item.Username == User.Identity.Name)
+            {
+            <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BookedDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Adults)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Children)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsEducation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SchoolName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ValidDate)
+                    </td>
+                    <th>
+                        £@((item.Adults * 10) + (item.Children * 5)).00
+                    </th>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.TicketId">Details</a>
+                    </td>
+            </tr>
+            }
+            
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create"><button type="button" class="btn btn-primary">Book Tickets</button></a>

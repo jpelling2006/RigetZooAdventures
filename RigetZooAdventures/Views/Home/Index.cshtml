@@ -1,0 +1,681 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<br />
+
+@* https://getbootstrap.com/docs/5.3/components/carousel/ *@
+@* Hero Image Carousel *@
+<div class="row">
+    <div id="carouselIndex" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        @* Carousel Indicators *@
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+
+            @* Slide 1 *@
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="~/assets/index/zebra.jpg" class="d-block w-100" alt="Black and white zebra eating the green grass it is stood on.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>In hac habitasse platea dictumst.</h5>
+                    <p>Vivamus vehicula nulla elementum diam tempus gravida. Vivamus consequat nulla sit amet ex volutpat elementum ac luctus velit. Nulla at vestibulum justo.</p>
+                </div>
+            </div>
+
+            @* Slide 2 *@
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="~/assets/index/lions.jpg" class="d-block w-100" alt="Two brown lionesses - mother and daughter. The mother has her mouth slightly open whilst the cub is looking up with it's eyes shut.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nulla at porta leo.</h5>
+                    <p>Morbi eu lorem ac nulla hendrerit vulputate. Aliquam ultrices elit quis malesuada sollicitudin.</p>
+                </div>
+            </div>
+
+            @* Slide 3 *@
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="~/assets/index/seaLion.jpg" class="d-block w-100" alt="A sea lion sat on a concrete platform near the pool in its enclosure.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>In nec tincidunt metus.</h5>
+                    <p>In placerat tellus non eros sodales eleifend. Aliquam mollis nisi eget sollicitudin aliquet. Pellentesque volutpat semper dolor in venenatis.</p>
+                </div>
+            </div>
+
+            @* Slide 4 *@
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="~/assets/index/giraffesAndZebras.jpg" class="d-block w-100" alt="A few giraffes and zebras strolling about and eating the grass on the safari fields.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ut in odio ex.</h5>
+                    <p>Donec sed nunc eget velit iaculis dignissim. Curabitur tempus leo libero, at fringilla justo blandit et. Sed dictum gravida felis eu maximus.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndex" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndex" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<br /><br />
+
+
+@* Highlight Cards *@
+<div class="row" style="text-align: center;">
+
+    @* Book Tickets *@
+    <div class="col-lg-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <img src="~/assets/index/whiteSwans.jpg" alt="Zoo guests laughing as they feed some white swans." />
+                </div>
+                <div class="card-body">
+                    <h5>Experience Wildlife</h5>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Vestibulum dictum lectus nec mauris hendrerit hendrerit. Maecenas eu ipsum eget lectus luctus aliquet eget eu nisl. Nulla mauris tellus, aliquet vitae augue quis, dictum pulvinar nibh. In efficitur consectetur dui, et mattis mi faucibus et. Quisque sit amet nisi erat. Donec nec rhoncus arcu.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a asp-area="" asp-controller="Tickets" asp-action="Create"><button class="btn btn-primary">Book Now!</button></a> @* book normal ticket *@
+                </div>
+            </div>
+        <br />
+    </div>
+
+    @* Safari *@
+    <div class="col-lg-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <img src="~/assets/index/elephant.jpg" alt="Spectators watching an African elephant from a safari truck." />
+                </div>
+                <div class="card-body">
+                    <h5>See Animals Up Close!</h5>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Mauris at congue dui. Sed at purus mi. Maecenas non ex elit. Donec eget viverra eros, ac tempor ligula. Aliquam nec tincidunt quam. Fusce vitae placerat leo, vel pulvinar leo. Donec quis libero vel turpis ullamcorper maximus sed a nulla. Orci varius natoque penatibus et magnis dis parturient montes.
+                    </p>
+                </div>
+                <div class="card-body">
+                <a asp-area="" asp-controller="Activities" asp-action="Safari"><button class="btn btn-primary">See More</button></a> @* Link to Safari Page *@
+                </div>
+            </div><br />
+    </div>
+
+    @* Education Tickets *@
+    <div class="col-lg-3">
+        <a>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <img src="~/assets/index/giraffes.jpg" alt="Two giraffes with their necks crossing each other." />
+                </div>
+                <div class="card-body">
+                    <h5>Venture Outside the Classroom!</h5>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Nullam consectetur rutrum mauris id ullamcorper. Donec ultricies tincidunt leo ac ultricies. Etiam feugiat ullamcorper arcu vitae suscipit. Integer ut est id magna suscipit cursus id a sem. Etiam semper arcu urna. Nullam augue diam, congue ut dignissim nec, commodo eu augue.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a><button class="btn btn-primary">Book School Trip</button></a> @* to education booking *@ @* Currently goes nowhere *@
+                </div>
+            </div>
+        </a> <br />
+    </div>
+
+    @* Hotel *@
+    <div class="col-lg-3">
+        <a>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <img src="~/assets/index/hotelRoom.jpg" alt="A dimly-lit hotel room featuring a double bed and dark wood." />
+                </div>
+                <div class="card-body">
+                    <h5>Want to Stay Longer?</h5>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Nunc sit amet odio posuere, auctor augue in, posuere nibh. In hac habitasse platea dictumst. Etiam semper ipsum eget neque pellentesque sodales. Cras sed rhoncus leo. Cras bibendum ac orci sed accumsan. Donec sed porttitor quam. Nulla ac risus id felis efficitur facilisis.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <a asp-area="" asp-controller="Hotel" asp-action="Facilities"><button class="btn btn-primary">See More</button></a> @* Hotel Facilities Page *@
+                </div>
+            </div>
+        </a> <br />
+    </div>
+</div>
+
+<br /><br />
+
+@* Latest Articles *@
+<div class="row">
+    <h2 style="text-align: center;">Latest Zoo News</h2>
+</div>
+<br />
+
+
+@* Articles Cards *@
+<div class="row" style="text-align: center;"> @* CONTAINS PLACEHOLDERS *@
+
+    @* Article 1 *@
+    <div class="col-lg-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <img src="~/assets/index/whiteSwans.jpg" alt="Zoo guests laughing as they feed some white swans." />
+            </div>
+            <div class="card-body">
+                <h5>Morbi eleifend ac velit sed suscipit</h5>
+            </div>
+            <div class="card-body">
+                <p>
+                    Fusce euismod fermentum metus, nec eleifend erat aliquet id. Praesent malesuada nisi gravida mi accumsan, dignissim elementum tellus tincidunt. Curabitur vitae metus in eros interdum iaculis quis eget magna.
+                </p>
+            </div>
+            <div class="card-body">
+                <a><button class="btn btn-primary">Go to Article</button></a> @* go to article *@
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+    </div>
+
+    @* Article 2 *@
+    <div class="col-lg-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <img src="~/assets/index/whiteSwans.jpg" alt="Zoo guests laughing as they feed some white swans." />
+            </div>
+            <div class="card-body">
+                <h5>Quisque pulvinar sodales tellus in suscipit</h5>
+            </div>
+            <div class="card-body">
+                <p>
+                    Suspendisse ac lobortis dui, in imperdiet dui. Sed vitae mattis odio. Cras velit libero, ornare vel efficitur vel, porttitor commodo neque. Nullam varius magna in tellus efficitur finibus at sit amet risus. Pellentesque eleifend elit lectus, at blandit justo faucibus luctus.
+                </p>
+            </div>
+            <div class="card-body">
+                <a><button class="btn btn-primary">Go to Article</button></a> @* go to article *@
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+    </div>
+
+    @* Article 3 *@
+    <div class="col-lg-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <img src="~/assets/index/whiteSwans.jpg" alt="Zoo guests laughing as they feed some white swans." />
+            </div>
+            <div class="card-body">
+                <h5>Sed semper quis elit eget condimentum</h5>
+            </div>
+            <div class="card-body">
+                <p>
+                    Proin consequat cursus facilisis. Nunc ac nunc at orci laoreet tincidunt blandit eget odio. Etiam dolor erat, ultrices eu semper non, vestibulum eu purus. Duis id est sed nibh viverra sollicitudin eget ac enim. Donec fringilla, dolor efficitur vestibulum auctor.
+                </p>
+            </div>
+            <div class="card-body">
+                <a><button class="btn btn-primary">Go to Article</button></a> @* go to article *@
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+@* Meet the Animals *@
+<div class="row">
+    <h2 style="text-align: center;">Meet the Animals!</h2>
+</div>
+<br />
+
+@* The Grid *@
+
+@* Row 1 *@
+<div class="row">
+    @* Animal 1 *@
+    <div class="col-lg-2">
+
+        @* Image Button *@
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow1Col1" aria-controls="offcanvasRow1Col1"><img src="~/assets/index/animalGrid/row1/col1.jpg" alt="A brown bear sat on the ground."/></a>
+
+        @* Offcanvas *@
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow1Col1" aria-labelledby="offcanvasRow1Col1Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow1Col1Label">Vestibulum luctus in nisl nec efficitur</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col1.jpg" alt="A brown bear sat on the ground." />
+                </div>
+                <br />
+                <div>
+                    Nunc a mi eget orci fringilla gravida nec at enim. Vestibulum condimentum ac libero et faucibus. Fusce cursus, tortor at mollis scelerisque, ex sem tincidunt nibh, et congue urna orci vitae eros. Nulla rutrum luctus nisi, non lobortis risus vestibulum nec. Fusce tempus tristique ante, ut dignissim diam elementum at. Curabitur hendrerit ante non justo molestie, porta maximus nisl imperdiet. Nunc laoreet risus justo, vel accumsan nisl pellentesque quis. In vitae libero vehicula, euismod odio ullamcorper, tempus lectus.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    @* Animal 2 *@
+    <div class="col-lg-2">
+
+        @* Image Button *@
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow1Col2" aria-controls="offcanvasRow1Col2"><img src="~/assets/index/animalGrid/row1/col2.jpg" alt="A meerkat stood up and looking just above the camera." /></a>
+
+        @* Offcanvas *@
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow1Col2" aria-labelledby="offcanvasRow1Col2Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow1Col2Label">Integer at nibh neque</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col2.jpg" alt="A meerkat stood up and looking just above the camera." />
+                </div>
+                <br />
+                <div>
+                    Vestibulum varius vitae tortor imperdiet varius. Nullam ut felis odio. Mauris ultricies hendrerit ligula eu tempor. Nunc arcu massa, posuere eu lectus sed, ornare porta massa. Pellentesque blandit tristique suscipit. Mauris id ex nulla. Sed ut diam lorem. Praesent vestibulum, tellus eget consequat dictum, risus ex vehicula nisl, vel maximus justo lacus eu risus. Maecenas erat nunc, vulputate et bibendum et, pulvinar ac leo. Fusce lorem magna, bibendum id viverra a, bibendum eu elit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    @* Animal 3 *@
+    <div class="col-lg-2">
+
+        @* Image Button *@
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow1Col3" aria-controls="offcanvasRow1Col3"><img src="~/assets/index/animalGrid/row1/col3.jpg" alt="A tiger laying on the rocks in its enclosure, mid-yawn." /></a>
+
+        @* Offcanvas *@
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow1Col3" aria-labelledby="offcanvasRow1Col3Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow1Col3Label">Integer at nibh neque</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col3.jpg" alt="Aliquam nec augue eu est vestibulum consequat" />
+                </div>
+                <br />
+                <div>
+                    Nulla maximus vehicula aliquet. Praesent nec purus ac est facilisis dignissim at et magna. Praesent ac mattis enim. Mauris a augue consequat, posuere lorem eget, faucibus nisl. Sed at augue consequat, ullamcorper dui sed, interdum lectus. Proin maximus egestas velit at scelerisque. Cras blandit egestas nulla in sagittis. Phasellus sed ligula suscipit, dignissim ligula vestibulum, dapibus leo. Sed maximus sagittis nunc, et rutrum purus efficitur ut.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    @* Animal 4 *@
+    <div class="col-lg-2">
+        @* Image Button *@
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow1Col4" aria-controls="offcanvasRow1Col4"><img src="~/assets/index/animalGrid/row1/col4.jpg" alt="A giraffe stood just infront of some stones and trees." /></a>
+
+        @* Offcanvas *@
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow1Col4" aria-labelledby="offcanvasRow1Col4Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow1Col4Label">Nunc vitae scelerisque ex</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col4.jpg" alt="A giraffe stood just infront of some stones and trees." />
+                </div>
+                <br />
+                <div>
+                    Duis non pulvinar orci. Suspendisse vitae lectus sapien. Nunc efficitur arcu ac neque blandit porta. In eu odio et risus scelerisque tincidunt id sit amet risus. Nullam quis elit aliquam, dictum magna at, varius risus. Phasellus egestas dapibus metus. Ut euismod ligula vitae est sodales, sit amet euismod diam tempor. Pellentesque aliquam, felis et iaculis malesuada, tellus sem interdum diam, eu congue dolor eros eu risus. Nunc porta tempus massa, at condimentum metus faucibus nec. Vivamus a nulla a nisi facilisis mattis sit amet eget eros.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    @* Animal 5 *@
+    <div class="col-lg-2">
+
+        @* Image Button *@
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow1Col5" aria-controls="offcanvasRow1Col5"><img src="~/assets/index/animalGrid/row1/col5.jpg" alt="A rhino walking towards the camera, with a white brick wall behind it." /></a>
+
+        @* Offcanvas *@
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow1Col5" aria-labelledby="offcanvasRow1Col5Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow1Col5Label">Phasellus id ipsum quam</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col5.jpg" alt="A rhino walking towards the camera, with a white brick wall behind it." />
+                </div>
+                <br />
+                <div>
+                    Sed fringilla pretium nunc, quis cursus ipsum venenatis vitae. Curabitur et ex quis diam sollicitudin feugiat vel non lacus. Maecenas maximus mauris vel fringilla mattis. Nam at dapibus elit, vel fermentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eu condimentum ipsum. Duis suscipit nisi ut vehicula fermentum. Maecenas dictum interdum felis a aliquet. Nulla sed augue nec tortor luctus elementum ac vel diam.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    @* Animal 6 *@
+    <div class="col-lg-2">
+
+        @* Image Button *@
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow1Col6" aria-controls="offcanvasRow1Col6"><img src="~/assets/index/animalGrid/row1/col6.jpg" alt="A panda sat on top of some bark." /></a>
+
+        @* Offcanvas *@
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow1Col6" aria-labelledby="offcanvasRow1Col6Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow1Col6Label">Donec id finibus nisl</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col6.jpg" alt="A panda sat on top of some bark." />
+                </div>
+                <br />
+                <div>
+                    In pretium nisl at odio placerat, et pulvinar nulla sollicitudin. Integer sed justo tellus. Integer ut consectetur elit. Proin varius dui velit, vitae dictum magna aliquam id. Cras blandit est nisl, eget cursus est venenatis non. Vestibulum ligula magna, facilisis lacinia molestie id, blandit vel libero. Nulla id mollis ipsum, quis lacinia sapien. Fusce faucibus porta nunc ut dignissim. Morbi ut libero interdum, molestie metus nec, convallis sapien. Maecenas rutrum laoreet eleifend.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+@* Row 2 - Currently a clone of row 1 *@
+<div class="row">
+    @* Animal 1 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow2Col1" aria-controls="offcanvasRow2Col1"><img src="~/assets/index/animalGrid/row1/col1.jpg" alt="A brown bear sat on the ground." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow2Col1" aria-labelledby="offcanvasRow2Col1Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow2Col1Label">Vestibulum luctus in nisl nec efficitur</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col1.jpg" alt="A brown bear sat on the ground." />
+                </div>
+                <br />
+                <div>
+                    Nunc a mi eget orci fringilla gravida nec at enim. Vestibulum condimentum ac libero et faucibus. Fusce cursus, tortor at mollis scelerisque, ex sem tincidunt nibh, et congue urna orci vitae eros. Nulla rutrum luctus nisi, non lobortis risus vestibulum nec. Fusce tempus tristique ante, ut dignissim diam elementum at. Curabitur hendrerit ante non justo molestie, porta maximus nisl imperdiet. Nunc laoreet risus justo, vel accumsan nisl pellentesque quis. In vitae libero vehicula, euismod odio ullamcorper, tempus lectus.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 2 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow2Col2" aria-controls="offcanvasRow2Col2"><img src="~/assets/index/animalGrid/row1/col2.jpg" alt="A meerkat stood up and looking just above the camera." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow2Col2" aria-labelledby="offcanvasRow2Col2Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow2Col2Label">Integer at nibh neque</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col2.jpg" alt="A meerkat stood up and looking just above the camera." />
+                </div>
+                <br />
+                <div>
+                    Vestibulum varius vitae tortor imperdiet varius. Nullam ut felis odio. Mauris ultricies hendrerit ligula eu tempor. Nunc arcu massa, posuere eu lectus sed, ornare porta massa. Pellentesque blandit tristique suscipit. Mauris id ex nulla. Sed ut diam lorem. Praesent vestibulum, tellus eget consequat dictum, risus ex vehicula nisl, vel maximus justo lacus eu risus. Maecenas erat nunc, vulputate et bibendum et, pulvinar ac leo. Fusce lorem magna, bibendum id viverra a, bibendum eu elit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 3 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow2Col3" aria-controls="offcanvasRow2Col3"><img src="~/assets/index/animalGrid/row1/col3.jpg" alt="A tiger laying on the rocks in its enclosure, mid-yawn." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow2Col3" aria-labelledby="offcanvasRow2Col3Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow2Col3Label">Integer at nibh neque</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col3.jpg" alt="Aliquam nec augue eu est vestibulum consequat" />
+                </div>
+                <br />
+                <div>
+                    Nulla maximus vehicula aliquet. Praesent nec purus ac est facilisis dignissim at et magna. Praesent ac mattis enim. Mauris a augue consequat, posuere lorem eget, faucibus nisl. Sed at augue consequat, ullamcorper dui sed, interdum lectus. Proin maximus egestas velit at scelerisque. Cras blandit egestas nulla in sagittis. Phasellus sed ligula suscipit, dignissim ligula vestibulum, dapibus leo. Sed maximus sagittis nunc, et rutrum purus efficitur ut.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 4 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow2Col4" aria-controls="offcanvasRow2Col4"><img src="~/assets/index/animalGrid/row1/col4.jpg" alt="A giraffe stood just infront of some stones and trees." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow2Col4" aria-labelledby="offcanvasRow2Col4Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow2Col4Label">Nunc vitae scelerisque ex</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col4.jpg" alt="A giraffe stood just infront of some stones and trees." />
+                </div>
+                <br />
+                <div>
+                    Duis non pulvinar orci. Suspendisse vitae lectus sapien. Nunc efficitur arcu ac neque blandit porta. In eu odio et risus scelerisque tincidunt id sit amet risus. Nullam quis elit aliquam, dictum magna at, varius risus. Phasellus egestas dapibus metus. Ut euismod ligula vitae est sodales, sit amet euismod diam tempor. Pellentesque aliquam, felis et iaculis malesuada, tellus sem interdum diam, eu congue dolor eros eu risus. Nunc porta tempus massa, at condimentum metus faucibus nec. Vivamus a nulla a nisi facilisis mattis sit amet eget eros.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 5 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow2Col5" aria-controls="offcanvasRow2Col5"><img src="~/assets/index/animalGrid/row1/col5.jpg" alt="A rhino walking towards the camera, with a white brick wall behind it." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow2Col5" aria-labelledby="offcanvasRow2Col5Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow2Col5Label">Phasellus id ipsum quam</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col5.jpg" alt="A rhino walking towards the camera, with a white brick wall behind it." />
+                </div>
+                <br />
+                <div>
+                    Sed fringilla pretium nunc, quis cursus ipsum venenatis vitae. Curabitur et ex quis diam sollicitudin feugiat vel non lacus. Maecenas maximus mauris vel fringilla mattis. Nam at dapibus elit, vel fermentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eu condimentum ipsum. Duis suscipit nisi ut vehicula fermentum. Maecenas dictum interdum felis a aliquet. Nulla sed augue nec tortor luctus elementum ac vel diam.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 6 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow2Col6" aria-controls="offcanvasRow2Col6"><img src="~/assets/index/animalGrid/row1/col6.jpg" alt="A panda sat on top of some bark." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow2Col6" aria-labelledby="offcanvasRow2Col6Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow2Col6Label">Donec id finibus nisl</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col6.jpg" alt="A panda sat on top of some bark." />
+                </div>
+                <br />
+                <div>
+                    In pretium nisl at odio placerat, et pulvinar nulla sollicitudin. Integer sed justo tellus. Integer ut consectetur elit. Proin varius dui velit, vitae dictum magna aliquam id. Cras blandit est nisl, eget cursus est venenatis non. Vestibulum ligula magna, facilisis lacinia molestie id, blandit vel libero. Nulla id mollis ipsum, quis lacinia sapien. Fusce faucibus porta nunc ut dignissim. Morbi ut libero interdum, molestie metus nec, convallis sapien. Maecenas rutrum laoreet eleifend.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+@* Row 3 - Currently a clone of row 1 *@
+<div class="row">
+    @* Animal 1 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow3Col1" aria-controls="offcanvasRow3Col1"><img src="~/assets/index/animalGrid/row1/col1.jpg" alt="A brown bear sat on the ground." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow3Col1" aria-labelledby="offcanvasRow3Col1Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow3Col1Label">Vestibulum luctus in nisl nec efficitur</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col1.jpg" alt="A brown bear sat on the ground." />
+                </div>
+                <br />
+                <div>
+                    Nunc a mi eget orci fringilla gravida nec at enim. Vestibulum condimentum ac libero et faucibus. Fusce cursus, tortor at mollis scelerisque, ex sem tincidunt nibh, et congue urna orci vitae eros. Nulla rutrum luctus nisi, non lobortis risus vestibulum nec. Fusce tempus tristique ante, ut dignissim diam elementum at. Curabitur hendrerit ante non justo molestie, porta maximus nisl imperdiet. Nunc laoreet risus justo, vel accumsan nisl pellentesque quis. In vitae libero vehicula, euismod odio ullamcorper, tempus lectus.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 2 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow3Col2" aria-controls="offcanvasRow3Col2"><img src="~/assets/index/animalGrid/row1/col2.jpg" alt="A meerkat stood up and looking just above the camera." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow3Col2" aria-labelledby="offcanvasRow3Col2Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow3Col2Label">Integer at nibh neque</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col2.jpg" alt="A meerkat stood up and looking just above the camera." />
+                </div>
+                <br />
+                <div>
+                    Vestibulum varius vitae tortor imperdiet varius. Nullam ut felis odio. Mauris ultricies hendrerit ligula eu tempor. Nunc arcu massa, posuere eu lectus sed, ornare porta massa. Pellentesque blandit tristique suscipit. Mauris id ex nulla. Sed ut diam lorem. Praesent vestibulum, tellus eget consequat dictum, risus ex vehicula nisl, vel maximus justo lacus eu risus. Maecenas erat nunc, vulputate et bibendum et, pulvinar ac leo. Fusce lorem magna, bibendum id viverra a, bibendum eu elit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 3 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow3Col3" aria-controls="offcanvasRow3Col3"><img src="~/assets/index/animalGrid/row1/col3.jpg" alt="A tiger laying on the rocks in its enclosure, mid-yawn." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow3Col3" aria-labelledby="offcanvasRow3Col3Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow3Col3Label">Integer at nibh neque</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col3.jpg" alt="Aliquam nec augue eu est vestibulum consequat" />
+                </div>
+                <br />
+                <div>
+                    Nulla maximus vehicula aliquet. Praesent nec purus ac est facilisis dignissim at et magna. Praesent ac mattis enim. Mauris a augue consequat, posuere lorem eget, faucibus nisl. Sed at augue consequat, ullamcorper dui sed, interdum lectus. Proin maximus egestas velit at scelerisque. Cras blandit egestas nulla in sagittis. Phasellus sed ligula suscipit, dignissim ligula vestibulum, dapibus leo. Sed maximus sagittis nunc, et rutrum purus efficitur ut.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 4 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow3Col4" aria-controls="offcanvasRow3Col4"><img src="~/assets/index/animalGrid/row1/col4.jpg" alt="A giraffe stood just infront of some stones and trees." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow3Col4" aria-labelledby="offcanvasRow3Col4Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow3Col4Label">Nunc vitae scelerisque ex</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col4.jpg" alt="A giraffe stood just infront of some stones and trees." />
+                </div>
+                <br />
+                <div>
+                    Duis non pulvinar orci. Suspendisse vitae lectus sapien. Nunc efficitur arcu ac neque blandit porta. In eu odio et risus scelerisque tincidunt id sit amet risus. Nullam quis elit aliquam, dictum magna at, varius risus. Phasellus egestas dapibus metus. Ut euismod ligula vitae est sodales, sit amet euismod diam tempor. Pellentesque aliquam, felis et iaculis malesuada, tellus sem interdum diam, eu congue dolor eros eu risus. Nunc porta tempus massa, at condimentum metus faucibus nec. Vivamus a nulla a nisi facilisis mattis sit amet eget eros.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 5 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow3Col5" aria-controls="offcanvasRow3Col5"><img src="~/assets/index/animalGrid/row1/col5.jpg" alt="A rhino walking towards the camera, with a white brick wall behind it." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow3Col5" aria-labelledby="offcanvasRow3Col5Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow3Col5Label">Phasellus id ipsum quam</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col5.jpg" alt="A rhino walking towards the camera, with a white brick wall behind it." />
+                </div>
+                <br />
+                <div>
+                    Sed fringilla pretium nunc, quis cursus ipsum venenatis vitae. Curabitur et ex quis diam sollicitudin feugiat vel non lacus. Maecenas maximus mauris vel fringilla mattis. Nam at dapibus elit, vel fermentum sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eu condimentum ipsum. Duis suscipit nisi ut vehicula fermentum. Maecenas dictum interdum felis a aliquet. Nulla sed augue nec tortor luctus elementum ac vel diam.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    @* Animal 6 *@
+    <div class="col-lg-2">
+        <a class="grid-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRow3Col6" aria-controls="offcanvasRow3Col6"><img src="~/assets/index/animalGrid/row1/col6.jpg" alt="A panda sat on top of some bark." /></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRow3Col6" aria-labelledby="offcanvasRow3Col6Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRow3Col6Label">Donec id finibus nisl</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <img src="~/assets/index/animalGrid/row1/col6.jpg" alt="A panda sat on top of some bark." />
+                </div>
+                <br />
+                <div>
+                    In pretium nisl at odio placerat, et pulvinar nulla sollicitudin. Integer sed justo tellus. Integer ut consectetur elit. Proin varius dui velit, vitae dictum magna aliquam id. Cras blandit est nisl, eget cursus est venenatis non. Vestibulum ligula magna, facilisis lacinia molestie id, blandit vel libero. Nulla id mollis ipsum, quis lacinia sapien. Fusce faucibus porta nunc ut dignissim. Morbi ut libero interdum, molestie metus nec, convallis sapien. Maecenas rutrum laoreet eleifend.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+
+
+@* Prices *@
+<div class="row">
+    <h1 style="text-align: center;">Prices</h1>
+</div>
+<div class="row" style="text-align: center;">
+    <div class="col-lg-3"></div> @* Empty row *@
+
+    @* Normal Prices *@
+    <div class="col-lg-3">
+        <h2>Normal Prices:</h2>
+        <h5>
+            Adults: £10.00 <br />
+            Children: £5.00
+        </h5>
+    </div>
+
+    @* Education Prices *@
+    <div class="col-lg-3">
+        <h2>Education Prices:</h2>
+        <h5>
+            Adults: £5.00 <br />
+            Children: £3.00
+        </h5>
+    </div>
+</div>

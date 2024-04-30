@@ -1,0 +1,104 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model RigetZooAdventures.Models.Tickets
+
+@{
+    ViewData["Title"] = "Book Tickets";
+}
+
+<h1 style="text-align: center;">Book Tickets</h1>
+
+<br />
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Booked Date - Set automatically to current date *@
+            <div class="form-group">
+                <input asp-for="BookedDate" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" type="hidden" />
+            </div>
+
+            @* Username - Set automatically to the current user's username *@
+            <div class="form-group">
+                <input asp-for="Username" class="form-control" value="@User.Identity.Name" type="hidden"/>
+            </div>
+
+            @* Adults *@
+            <div class="form-group">
+                <label asp-for="Adults" class="control-label"></label>
+                <input asp-for="Adults" class="form-control" id="adults"/>
+                <span asp-validation-for="Adults" class="text-danger"></span>
+            </div>
+
+            @* Children *@
+            <div class="form-group">
+                <label asp-for="Children" class="control-label"></label>
+                <input asp-for="Children" class="form-control" id="children"/>
+                <span asp-validation-for="Children" class="text-danger"></span>
+            </div>
+
+            @* Is Education - kept to false *@
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsEducation" type="hidden"/>
+                </label>
+            </div>
+
+            @* School Name - removed from normal ticket booking *@
+            <div class="form-group">
+                <input asp-for="SchoolName" class="form-control" type="hidden" />
+            </div>
+
+            @* Valid date *@
+            <div class="form-group">
+                <label asp-for="ValidDate" class="control-label"></label>
+                <input asp-for="ValidDate" class="form-control" min="@DateTime.Now.ToString("yyyy-MM-dd")" /> @* Can't be before current date *@
+                <span asp-validation-for="ValidDate" class="text-danger"></span>
+            </div>
+
+            @* Total price of tickets *@
+            <div class="form-group">
+                <p>Total price: £<span id="totalPrice">0</span>.00</p>
+            </div>
+
+            <div class="form-group" style="display: inline-block;">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // checks for changes
+    document.getElementById("adults").oninput = function () {TotalPrice()}
+    document.getElementById("children").oninput = function () { TotalPrice() }
+
+    function TotalPrice() {
+
+        // gets inputs and sets them as float variables
+        let adults = parseFloat(document.getElementById("adults").value);
+        let children = parseFloat(document.getElementById("children").value);
+
+        if (isNaN(adults)) {
+            adults = 0;
+        }
+
+        if (isNaN(children)) {
+            children = 0;
+        }
+
+        // prices
+        let adultPrice = 10;
+        let childPrice = 5;
+
+        // calculation of total price
+        let totalPrice = (adults * adultPrice) + (children * childPrice);
+
+        document.getElementById("totalPrice").innerHTML = totalPrice;
+    }
+
+    TotalPrice();
+</script>
+

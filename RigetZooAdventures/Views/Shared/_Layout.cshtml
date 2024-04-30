@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Riget Zoo Adventures</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/RigetZooAdventures.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    @* Edu SA Beginner Font *@
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        @* The navigation bar *@
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3">
+            <div class="container-fluid">
+
+                @* Logo - also links to home *@
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/shared/rza-logo.png" style="height: 50px;"/></a> @* RZA Logo, sized down to not be too large *@
+
+                @* Button for mobile users to access the navigation bar *@
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" style="color: #fe701a; background-color: #fe701a;">
+                    <span class="navbar-toggler-icon" style="color: #ffffd1;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </span>
+                </button>
+
+                @* Main section of navigation bar *@
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        @* Home *@
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        @* News *@
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Articles" asp-action="Index">News</a>
+                        </li>
+
+                        @* Activities Dropdown *@
+                        <li class="nav-item dropdown"> 
+
+                            @* Toggle *@
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #fe701a;">Activities</a>
+                            <div class="dropdown-menu">
+
+                                @* All Activities *@
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="AllActivities">All Activities</a>
+
+                                @* Divider *@
+                                <div class="dropdown-divider"></div>
+
+                                @* Safari *@
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="Safari">Safari</a>
+
+                                @* The Bridge *@
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="Bridge">The Bridge</a>
+
+                                @* Feeding *@
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="Feeding">Feeding</a>
+
+                                @* Divider *@
+                                <div class="dropdown-divider"></div>
+
+                                @* Activity Booking - currently goes nowhere *@
+                                <a class="dropdown-item" style="color: #fe701a;">Book Activity</a>
+                            </div>
+                        </li>
+
+                        @* Hotel Dropdown *@
+                        <li class="nav-item dropdown">
+
+                            @* Toggle *@
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #fe701a;">Hotel</a>
+                            <div class="dropdown-menu">
+
+                                @* Facilities *@
+                                <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="Facilities">Facilities</a>
+
+                                @* Rooms *@
+                                <a class="dropdown-item" asp-area="" asp-controller="Hotel" asp-action="Rooms">Rooms</a>
+
+                                @* Divider *@
+                                <div class="dropdown-divider"></div>
+
+                                @* Booking *@
+                                <a class="dropdown-item" style="color: #fe701a;" asp-controller="HotelBookings" asp-action="Create">Book a Stay</a>
+                            </div>
+                        </li>
+
+                        @* Ticket booking button *@
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Tickets" asp-action="Create"><button type="button" class="btn btn-primary btn-sm">Book Now!</button></a>
+                        </li>
+                    </ul>
+
+                    @* Right side of navigation bar *@
+                    <ul class="navbar-nav">
+
+                        @* Accessibility Panel - Currently does nothing *@
+                        <li class="nav-item dropdown">
+
+                            @* Toggle *@
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #fe701a;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-universal-access-circle" viewBox="0 0 16 16">
+                                    @* Accessibility Icon *@
+                                    <path d="M8 4.143A1.071 1.071 0 1 0 8 2a1.071 1.071 0 0 0 0 2.143m-4.668 1.47 3.24.316v2.5l-.323 4.585A.383.383 0 0 0 7 13.14l.826-4.017c.045-.18.301-.18.346 0L9 13.139a.383.383 0 0 0 .752-.125L9.43 8.43v-2.5l3.239-.316a.38.38 0 0 0-.047-.756H3.379a.38.38 0 0 0-.047.756Z" />
+                                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8" />
+                                </svg>
+                            </a>
+
+                            @* Accessibility Checkboxes *@
+                            <div class="dropdown-menu">
+                                <form>
+                                    <fieldset style="padding-left: 10px;">
+                                        <div class="form-check form-switch"> @* Dark Mode *@
+                                            <input class="form-check-input" type="checkbox" value="" id="switchDarkMode"/>
+                                            <label class="form-check-label" for="checkDarkMode">Dark Mode</label>
+                                        </div>
+                                        <div class="form-check form-switch"> @* High Contrast Mode *@
+                                            <input class="form-check-input" type="checkbox" value="" id="switchHighContrastMode"/>
+                                            <label class="form-check-label" for="switchHighContrastMode">High Contrast Mode</label>
+                                        </div>
+                                        <div class="form-check form-switch"> @* Dyslexia Mode *@
+                                            <input class="form-check-input" type="checkbox" value="" id="switchDyslexiaMode"/>
+                                            <label class="form-check-label" for="switchDyslexiaMode">Dyslexia Mode</label>
+                                        </div>
+                                        <div class="form-check form-switch"> @* Yellow Tint Mode *@
+                                            <input class="form-check-input" type="checkbox" value="" id="switchYellowTintMode"/>
+                                            <label class="form-check-label" for="switchYellowTintMode">Yellow Tint Mode</label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+
+                    @* Log in actions *@
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @* Displays body of current page *@
+            @RenderBody()
+        </main>
+        <br />
+    </div>
+
+    
+
+    @* Footer *@
+    <footer class="footer text-muted">
+        <div class="container">
+            <div class="row" style="text-align: center;">
+
+                @* Legal Information *@
+                <div class="col-lg-4">
+                    <br />
+                    <p><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a></p>
+                    <p><a asp-area="" asp-controller="Home" asp-action="TermsAndConditions">Terms and Conditions</a></p>
+                    <br />
+                </div>
+
+                @* Opening Times *@
+                <div class="col-lg-4">
+                    <br />
+                    <h4>Opening Times</h4>
+                    <p>
+                        <b>Monday:</b> xx:xx to xx:xx<br />
+                        <b>Tuesday:</b> xx:xx to xx:xx<br />
+                        <b>Wednesday:</b> xx:xx to xx:xx<br />
+                        <b>Thursday:</b> xx:xx to xx:xx<br />
+                        <b>Friday:</b> xx:xx to xx:xx<br />
+                        <b>Saturday:</b> xx:xx to xx:xx<br />
+                        <b>Sunday:</b> xx:xx to xx:xx<br />
+                        Closed on Bank Holidays
+                    </p>
+                    <br />
+                </div>
+
+                @* Contact Information *@
+                <div class="col-lg-4">
+                    <br />
+                    <p>
+                        <b>Email:</b> contact@rigetzooadventures.org<br />
+                        <b>Phone:</b> +44169233452<br />
+                        <b>Follow us on X:</b> &commat;rigetzooadventures<br />
+                        <b>Follow us on Instagram:</b> &commat;rigetzooadventures<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

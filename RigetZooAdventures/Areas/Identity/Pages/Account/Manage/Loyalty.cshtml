@@ -1,0 +1,25 @@
+﻿@page
+@model LoyaltyModel
+@{
+    ViewData["Title"] = "Loyalty";
+    ViewData["ActivePage"] = ManageNavPages.Loyalty;
+}
+
+<h3>@ViewData["Title"]</h3>
+<div class="row">
+    <div class="col-md-6">
+        <p><b>This page is a prototype.</b> The loyalty reward scheme is a feature yet to be added.</p>
+        <br />
+        @* https://getbootstrap.com/docs/5.3/migration/#progress-bars *@
+        <div class="progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 75%;">
+                75% to next £1
+            </div>
+        </div>
+        <br />
+        <div class="row" style="text-align: center;">
+            <h5>You currently have <b>3500</b> points!</h5>
+            <h6>Balance: <b>£3.00</b></h6>
+        </div>
+    </div>
+</div>

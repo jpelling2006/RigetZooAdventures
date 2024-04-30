@@ -1,0 +1,485 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RigetZooAdventures.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RigetZooAdventures.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\allActivities\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\activities\\allActivities\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\allActivities\\bridge.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\allActivities\\bridge.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\allActivities\\carousel\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\activities\\allActivities\\carousel\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\allActivities\\carousel\\bridge.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\allActivities\\carousel\\bridge.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\allActivities\\carousel\\feeding.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\allActivities\\carousel\\feeding.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\allActivities\\carousel\\safari.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\allActivities\\carousel\\safari.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\allActivities\\feeding.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\allActivities\\feeding.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\allActivities\\safari.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\allActivities\\safari.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\bridge\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\activities\\bridge\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\bridge\\bridge1.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\bridge\\bridge1.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\bridge\\bridge2.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\bridge\\bridge2.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\bridge\\bridge3.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\bridge\\bridge3.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\bridge\\heroBridge.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\bridge\\heroBridge.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\feeding\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\activities\\feeding\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\feeding\\antelope.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\feeding\\antelope.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\feeding\\giraffe.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\feeding\\giraffe.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\feeding\\heroBirds.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\feeding\\heroBirds.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\feeding\\parrot.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\feeding\\parrot.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\safari\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\activities\\safari\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\safari\\safari1.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\safari\\safari1.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\safari\\safari2.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\safari\\safari2.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\safari\\safari3.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\safari\\safari3.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\activities\\safari\\zebras.jpg",
+      "PackagePath": "staticwebassets\\assets\\activities\\safari\\zebras.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\facilities\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\hotel\\facilities\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\facilities\\buffet.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\facilities\\buffet.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\facilities\\carousel\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\hotel\\facilities\\carousel\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\facilities\\carousel\\carouselHotelBalconies.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\facilities\\carousel\\carouselHotelBalconies.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\facilities\\carousel\\carouselHotelPool1.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\facilities\\carousel\\carouselHotelPool1.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\facilities\\carousel\\carouselHotelPool2.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\facilities\\carousel\\carouselHotelPool2.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\facilities\\pool.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\facilities\\pool.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\facilities\\privatePark.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\facilities\\privatePark.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\rooms\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\hotel\\rooms\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\rooms\\doubleRoom.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\rooms\\doubleRoom.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\rooms\\familyRoom.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\rooms\\familyRoom.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\rooms\\largeDoubleRoom.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\rooms\\largeDoubleRoom.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\hotel\\rooms\\largeFamilyRoom.jpg",
+      "PackagePath": "staticwebassets\\assets\\hotel\\rooms\\largeFamilyRoom.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\index\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\animalGrid\\row1\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\index\\animalGrid\\row1\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\animalGrid\\row1\\col1.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\animalGrid\\row1\\col1.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\animalGrid\\row1\\col2.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\animalGrid\\row1\\col2.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\animalGrid\\row1\\col3.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\animalGrid\\row1\\col3.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\animalGrid\\row1\\col4.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\animalGrid\\row1\\col4.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\animalGrid\\row1\\col5.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\animalGrid\\row1\\col5.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\animalGrid\\row1\\col6.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\animalGrid\\row1\\col6.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\elephant.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\elephant.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\giraffes.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\giraffes.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\giraffesAndZebras.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\giraffesAndZebras.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\hotelRoom.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\hotelRoom.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\lions.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\lions.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\seaLion.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\seaLion.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\whiteSwans.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\whiteSwans.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\index\\zebra.jpg",
+      "PackagePath": "staticwebassets\\assets\\index\\zebra.jpg"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\shared\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\shared\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\shared\\rza-logo-notext.png",
+      "PackagePath": "staticwebassets\\assets\\shared\\rza-logo-notext.png"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\assets\\shared\\rza-logo.png",
+      "PackagePath": "staticwebassets\\assets\\shared\\rza-logo.png"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RigetZooAdventures.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RigetZooAdventures.props",
+      "PackagePath": "build\\RigetZooAdventures.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RigetZooAdventures.props",
+      "PackagePath": "buildMultiTargeting\\RigetZooAdventures.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RigetZooAdventures.props",
+      "PackagePath": "buildTransitive\\RigetZooAdventures.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
