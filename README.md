@@ -6,6 +6,9 @@ You'll need to download this project onto your device, which I'll show you furth
 > For some unknown reason, layouts on some pages sometimes break. Most sections of the website have screenshots on the form anyways, so layouts that have been broken are shown as they're meant to be.
 > This might have been due to corruption during compression - but I don't know for definite.
 
+> [!Warning]
+> Ticket booking doesn't work! I know exactly what the problem is, but due to the rules of the exam I am not allowed to change it. Still feel free to write about it in your response, though!
+
 ## Forms
 **There is one form but it's split into sections.** It can be found [here](https://forms.gle/WkTgyGcy69J5R76m8).
 If you have knowledge of ASP.Net (or even just C# and HTML in general), please select **"Technical"** on the general page. Otherwise, select **"Non-Technical"**.
