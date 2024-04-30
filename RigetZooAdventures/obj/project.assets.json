@@ -12067,11 +12067,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures.csproj",
+      "projectUniqueName": "C:\\Users\\jessi\\Documents\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures.csproj",
       "projectName": "RigetZooAdventures",
-      "projectPath": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures.csproj",
+      "projectPath": "C:\\Users\\jessi\\Documents\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures.csproj",
       "packagesPath": "C:\\Users\\jessi\\.nuget\\packages\\",
-      "outputPath": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\obj\\",
+      "outputPath": "C:\\Users\\jessi\\Documents\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jessi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12147,24 +12147,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.16, 7.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.16, 7.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.16, 7.0.16]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.16, 7.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

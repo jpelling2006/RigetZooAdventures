@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace RigetZooAdventures.Controllers
 {
     // uncomment the next line after adding the admin role
-    [Authorize(Policy = "AdminOnly")]
+    // [Authorize(Policy = "AdminOnly")]
     //https://www.c-sharpcorner.com/article/adding-role-authorization-to-a-asp-net-mvc-core-application/
     public class RoleController : Controller
     {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fGO3w8AiV3c5hlbUNqCJWCbsCnGpYuzLGpL5kQzE4QkTmCLDFnqErGcNP2FikK2ToY1iHb02Nj4v6kaKMQzwvA==",
+  "dgSpecHash": "ekvDuzvTd6Kcjez9EFtDLbVNFDqBRgdUzEnYfQQboXiN4WkRylZVUMlpcK6GP8SzqKnE0skVllfO6Q/UCPsZhg==",
   "success": true,
-  "projectFilePath": "D:\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures.csproj",
+  "projectFilePath": "C:\\Users\\jessi\\Documents\\riget wiget\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures\\RigetZooAdventures.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jessi\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jessi\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -242,11 +242,7 @@
     "C:\\Users\\jessi\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\jessi\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\jessi\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\jessi\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\jessi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\jessi\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\jessi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\jessi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.16\\microsoft.netcore.app.host.win-x64.7.0.16.nupkg.sha512"
+    "C:\\Users\\jessi\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
