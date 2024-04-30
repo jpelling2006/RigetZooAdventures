@@ -2,7 +2,7 @@
 Thanks for conducting feedback for my OSP!
 You'll need to download this project onto your device, which I'll show you further down this page.
 
-> [!Warning]
+> [!Important]
 > For some unknown reason, layouts on some pages sometimes break. Most sections of the website have screenshots on the form anyways, so layouts that have been broken are shown as they're meant to be.
 > This might have been due to corruption during compression - but I don't know for definite.
 
